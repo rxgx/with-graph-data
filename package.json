@@ -1,0 +1,25 @@
+{
+  "name": "with-graph-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rxgx/with-graph-data.git"
+  },
+  "author": "Ryan Gasparini <ryan@rxgx.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rxgx/with-graph-data/issues"
+  },
+  "homepage": "https://github.com/rxgx/with-graph-data#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "jest": "^24.8.0",
+    "recompose": "^0.30.0",
+    "typescript": "^3.5.3"
+  }
+}
