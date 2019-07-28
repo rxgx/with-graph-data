@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/rxgx/with-graph-data#readme",
   "devDependencies": {
+    "@types/react": "^16.8.23",
+    "@types/recompose": "^0.30.6",
     "eslint": "^6.1.0",
     "jest": "^24.8.0",
     "recompose": "^0.30.0",

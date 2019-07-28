@@ -1,15 +1,23 @@
-import { branch, compose } from "recompose";
+import { branch, renderComponent } from "recompose";
 
-function isDataLoading(props) {
-  return Boolean(props.data.isLoading);
+interface Props {
+  data: {
+    loading: boolean;
+    items: Array<any>;
+    error: any;
+  };
 }
 
-interface Props {}
+function isDataLoading(props: Props): boolean {
+  return Boolean(props.data.loading);
+}
 
-export default function withGraphData(LoadingComponent) {
+export default function withGraphData(
+  LoadingComponent: React.ComponentClass | React.FunctionComponent | string
+) {
   return branch(
     isDataLoading,
-    component => component,
+    (Component: any) => Component,
     renderComponent(LoadingComponent)
-  )(Component);
+  );
 }
