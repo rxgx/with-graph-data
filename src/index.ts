@@ -1,23 +1,39 @@
-import { branch, renderComponent } from "recompose";
+import { branch, compose, renderComponent } from "recompose";
 
 interface Props {
   data: {
     loading: boolean;
-    items: Array<any>;
-    error: any;
+    items?: Array<any>;
+    error?: any;
   };
 }
 
-function isDataLoading(props: Props): boolean {
+export function hasDataError(props: Props): boolean {
+  return Boolean(props.data.error);
+}
+
+export function isDataLoading(props: Props): boolean {
   return Boolean(props.data.loading);
 }
 
-export default function withGraphData(
+export function withGraphLoading(
   LoadingComponent: React.ComponentClass | React.FunctionComponent | string
 ) {
-  return branch(
-    isDataLoading,
-    (Component: any) => Component,
-    renderComponent(LoadingComponent)
+  return branch(isDataLoading, renderComponent(LoadingComponent));
+}
+
+export function withGraphError(
+  ErrorComponent: React.ComponentClass | React.FunctionComponent | string
+) {
+  return branch(hasDataError, renderComponent(ErrorComponent));
+}
+
+export default function withGraphData(
+  LoadingComponent: any,
+  ErrorComponent: any
+) {
+  return compose(
+    withGraphLoading(LoadingComponent),
+    withGraphError(ErrorComponent)
   );
 }
