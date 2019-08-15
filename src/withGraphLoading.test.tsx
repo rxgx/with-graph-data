@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
-import { withGraphLoading } from "./index";
+import { withGraphLoading } from "./withGraphData";
 
 afterEach(cleanup);
 

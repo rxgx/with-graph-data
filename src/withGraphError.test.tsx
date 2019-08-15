@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
-import { withGraphError } from "./index";
+import { withGraphError } from "./withGraphData";
 
 afterEach(cleanup);
 
