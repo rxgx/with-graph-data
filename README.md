@@ -4,12 +4,20 @@ _Note: work in progress, not yet released_
 
 An HoC, higher-order component, that handles the loading and error conditions for a GraphQL query HoC.
 
+## Installation
+
+Install the module:
+
+```
+npm install @rxgx/with-graph-data
+```
+
 ## Usage
 
 ```js
 import { compose } from 'recompose';
 import { graphql } from 'apollo-client';
-import withGraphData from 'with-graph-data';
+import withGraphData from '@rxgx/with-graph-data';
 
 function ErrorComponent() {
   return <p>Error happened</p>;
