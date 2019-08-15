@@ -3,6 +3,7 @@ import { branch, compose, renderComponent } from "recompose";
 interface Props {
   data: {
     loading?: boolean;
+    [name: string]: any;
     error?: any;
   };
 }

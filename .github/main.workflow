@@ -1,4 +1,4 @@
-workflow "Verify Pull Request" {
+workflow "Pull Request" {
   on = "push"
   resolves = [
     "Typescript",
