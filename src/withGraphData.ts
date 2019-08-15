@@ -2,8 +2,7 @@ import { branch, compose, renderComponent } from "recompose";
 
 interface Props {
   data: {
-    loading: boolean;
-    items?: Array<any>;
+    loading?: boolean;
     error?: any;
   };
 }
