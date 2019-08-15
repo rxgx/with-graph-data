@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "tsc",
+    "build": "tsc",
+    "prepare": "jest && tsc",
     "test": "jest"
   },
   "repository": {
