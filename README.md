@@ -1,4 +1,4 @@
-_Note: work in progress, not yet released_
+_Note: work in progress, recompose is deprecated and not good with Typescript_
 
 # with-graph-data
 
