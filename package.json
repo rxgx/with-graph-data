@@ -36,7 +36,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "recompose": "^0.30.0",
-    "ts-jest": "^24.0.2",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.6.3"
   }
 }
