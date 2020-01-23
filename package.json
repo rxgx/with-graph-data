@@ -31,12 +31,12 @@
     "@types/react": "^16.9.19",
     "@types/recompose": "^0.30.7",
     "eslint": "^6.8.0",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
     "jsdom": "^16.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "recompose": "^0.30.0",
-    "ts-jest": "^24.3.0",
+    "ts-jest": "^25.0.0",
     "typescript": "^3.7.5"
   }
 }
