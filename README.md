@@ -1,4 +1,20 @@
-_Note: work in progress, recompose is deprecated and not good with Typescript_
+### _Note: `recompose` is deprecated, hard to test, and not good with Typescript_
+
+**USE HOOKS INSTEAD!** They are easier and essentially vanilla functions. For example:
+
+```jsx
+function ProductsPreloader(props) {
+  const { query, variables } = props
+
+  const { loading, error, data } = useQuery(query, { variables })
+
+  if (loading) return <LoadingComponent />
+  if (error || !data) return <ErrorComponent error={error || 'Failed to load products'} />
+  return <ProductsDisplay products={data.products} />
+}
+```
+
+---
 
 # with-graph-data
 
