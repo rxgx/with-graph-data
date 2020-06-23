@@ -30,7 +30,7 @@
     "@types/jest": "^26.0.0",
     "@types/react": "^16.9.38",
     "@types/recompose": "^0.30.7",
-    "eslint": "^7.2.0",
+    "eslint": "^7.3.0",
     "jest": "^26.0.1",
     "jsdom": "^16.2.2",
     "minimist": ">=1.2.5",
